@@ -1,0 +1,63 @@
+/*------|
+fullsize|
+-------*/
+
+@media screen and (min-width:991px){
+    /*--navbar--*/
+    #link-1,#link-2,#link-3{
+        font-size: 3rem!important;
+        margin-bottom: 4rem;
+        border-bottom: 1px solid transparent;
+    }
+    #link-1:hover,
+    #link-2:hover,
+    #link-3:hover{
+        transition: 0.5s ease-out;
+        max-width: fit-content;
+        border-bottom: 1px solid white;
+    }
+    #canvas__btn-close{    
+        right: -500%;
+        top: -40%;
+        font-size: 1.5rem;
+    }
+    /*--carousel--*/
+    #carousel,#card-1,#card-2,#card-3,#card-4{
+        background-size: 550px 550px;
+        border-radius: 10px;
+        height: 550px;
+        width: 550px;
+    }
+    #card__prev:active,#card__next:active{
+        box-shadow: 0 2px 0 var(--black);
+        background-color:var(--beige);
+        transition: 0.3s ease-out;
+    }
+} 
+
+/*----|
+mobile|
+-----*/
+
+@media screen and (max-width:991px){
+    /*--navbar--*/
+    #link-1,#link-2,#link-3{
+        font-size: 2rem!important;
+        margin-bottom: 4rem;
+    }
+    #canvas__btn-close{    
+        right: -190%;
+        top: -70%;
+        font-size: 4rem;
+    }
+    /*--carousel--*/
+    #carousel,#card-1,#card-2,#card-3,#card-4{
+        background-size: 400px 400px;
+        border-radius: 10px;
+        width: 400px;
+        height: 400px;
+    }
+    #card__prev:focus,#card__next:focus{
+        box-shadow: 0 0 10px 1px var(--beige);
+    }
+} 
