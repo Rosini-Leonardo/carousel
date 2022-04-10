@@ -1,9 +1,0 @@
-1) error page (eventListener)
-2) name's conventional folder 
-
-// Things to change 
-
-1-- Aspect 
-2-- Animation (links-btn)
-3-- Var name 
-4-- check custom CSS
