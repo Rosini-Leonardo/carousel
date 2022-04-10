@@ -1,0 +1,91 @@
+/*------------|
+default button|
+-------------*/
+
+.button,
+.button-dark{
+    outline: none;
+    padding: 0.7rem;
+    border-radius: 5px;
+    border: 0;
+    background-color: transparent;
+}
+
+.button{
+    color: black;
+}
+
+.button-dark{
+    color: white;
+}
+
+/*-----------|
+canvas button|
+------------*/
+
+#canvas__btn-open{
+    padding: 0;
+    
+    transform: translate(-50%,-50%);
+    position: absolute;
+    right: 5%;
+    top: 50%;
+}
+
+#menu-bars{
+    /* fallback svg dimension */
+    width: 30px;
+    height: 30px;
+}
+
+#canvas__btn-close{    
+    font-size: larger;
+    border-radius: 100%;
+    position:relative;
+}
+
+#canvas__close-icon{
+    color: white;
+    font-size:larger;
+}
+
+/*-------------|
+carousel button|
+--------------*/
+
+#card__prev,
+#card__next{
+    background-color: white;
+    border-radius: 50px;
+    z-index: 100;
+    height: 45px;   
+    width: 45px;
+    
+    position: absolute;
+    top: 50%;
+}
+
+#card__prev{
+    transform: translate(-50%,-50%);
+    left: 10%;
+}
+
+#card__next{
+    transform: translate(50%,-50%);
+    right: 10%;
+}
+
+/*--------------|
+animation button|
+---------------*/
+
+#menu-bars:hover{
+    transition: 0.6s ease-out;
+    transform: rotate(90deg);
+}
+
+#card__prev:hover,
+#card__next:hover{
+    background-color: var(--beige);
+    opacity: 1;
+}

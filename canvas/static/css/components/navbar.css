@@ -1,0 +1,71 @@
+/*----|
+navbar|
+-----*/
+
+.navbar{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+
+    width: 100vw;
+    background-color: var(--beige);
+}
+
+#nav-brand{
+    content: '';
+}
+
+/*----|
+canvas|
+-----*/
+
+#canvas{
+    background-color: black;
+    color: white;
+    padding: 1.5rem;
+    z-index: 400;
+    height: 100vh;
+    width: 100vw;
+    
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 0;
+}
+
+
+.canvas-body{
+    transform: translate(-50%,-50%);
+    position: absolute;
+    left: 30%;
+    top: 45%;
+    
+    font-size: 2rem;
+}
+
+/* CANVAS MODE */
+.canvas-disabled{
+    transform: translateX(-100%);
+}
+
+.canvas-off{
+    opacity: 0;
+    transition: 2s ease-out;
+    transform: translateX(-210%);
+}
+
+.canvas-on{
+    transition: 1.5s ease-out;
+    transform: translateX(0%);
+}
+
+/*----------|
+canvas links|
+-----------*/
+
+#link-container>*{
+    display: block;
+}
+
+/* effects in media.css */
